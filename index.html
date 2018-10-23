@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width,initial-scale=0.5,minimum-scale=0.5,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" href="./static/css/reset.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_882396_eam2k3hpbh.css">
+    <link href="https://cdn.bootcss.com/Swiper/4.4.1/css/swiper.min.css" rel="stylesheet">
+    <title>yanxuan-shopping</title>
+    <style>
+      html,body{
+        height : 100%;
+        background: #EDEDED;
+      }
+      body{
+        font-size : 0.5rem
+      }
+      .swiper-container{
+        margin-top:3.31rem
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+    <script type="text/javascript" src="https://as.alipayobjects.com/g/component/fastclick/1.0.6/fastclick.js"></script>
+    <script type="text/javascript">
+      /*解决移动端0.3s点击延迟的问题*/
+      if ('addEventListener' in document) {
+        document.addEventListener('DOMContentLoaded', function() {
+          FastClick.attach(document.body);
+        }, false);
+      }
+      if(!window.Promise) {
+        document.writeln('<script src="https://as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise.min.js"'+'>'+'<'+'/'+'script>');
+      }
+
+      (function(){
+        var width = document.documentElement.clientWidth;
+        var styleNode = document.createElement('style');
+        styleNode.innerHTML = 'html{font-size: '+ width/16 +'px !important;}';
+        document.head.appendChild(styleNode);
+
+      })();
+    </script>
+  </body>
+</html>
