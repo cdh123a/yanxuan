@@ -269,7 +269,6 @@
       padding-top 0.3rem
       padding-bottom 0.3rem
       background #fff
-      margin-top 1.9rem
     .scroll
       background #fff
       margin-bottom 0.4rem
