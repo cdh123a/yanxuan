@@ -29,5 +29,49 @@ export default {
   //专题精选
   topicList (state){
     return state.dataMain.topicList
-  }
+  },
+
+
+  //category组件的
+  categoryL1List(state){
+    return state.dataCategory.categoryL1List
+  },
+
+
+  //search组件的
+  bannerSearch (state) {
+    return state.dataSearch.banner
+  },
+
+  column(state){
+    return state.dataSearch.column
+  },
+
+  recommendOne(state){
+    return state.dataSearch.recommendOne
+  },
+
+  recommendTwo(state){
+    return state.dataSearch.recommendTwo
+  },
+
+  recommendThree(state){
+    return state.dataSearch.recommendThree
+  },
+
+  tenfifteen(state){
+    return state.dataSearch.tenfifteen
+  },
+
+  zhenOne(state){
+    return state.dataSearch.zhenOne
+  },
+
+  zhenTwo(state){
+    return state.dataSearch.zhenTwo
+  },
+
+  zhenThree(state){
+    return state.dataSearch.zhenThree
+  },
 }

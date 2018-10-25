@@ -7,13 +7,18 @@
     <div class="zy-row">
       <img src="./images/6.jpg" class="zy-img" alt="严选">
       <div class="button"></div>
-      <div class="use" @click="$router.replace('/main')"></div>
+      <div class="use" @click="$router.replace('/main?q=1')"></div>
     </div>
   </div>
 </template>
 
 <script>
-  export default {}
+  export default {
+    mounted () {
+      //发送请求
+      this.$store.dispatch('getMain')
+    }
+  }
 </script>
 
 <style type="text/stylus" lang="stylus" rel="stylesheet/stylus" scoped>
